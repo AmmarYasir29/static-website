@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style2.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-firestore.js"></script>
+    <title>Main Page</title>
+  </head>
+  <body>
+    <aside>
+      <header>Control Panel</header>
+      <figure>
+        <img src="./img/logo.png" alt="logo" />
+      </figure>
+      <div class="control">
+        <a href="#"
+          ><img src="./img/ic_user.svg " alt="user logo" />
+          <span> User</span></a
+        >
+        <a href="#"
+          ><img src="./img/ic_settings.svg" alt="setings logo" />
+          <span> Settings</span></a
+        >
+        <a href="index.htm">
+          <img src="./img/ic_logout.svg" alt="logout logo" />
+          <span id="logout">Logout</span>
+        </a>
+        <a href="#">
+          <img src="./img/add.svg" alt="Add Logo" />
+          <span>Add User</span>
+        </a>
+      </div>
+    </aside>
+    <main>
+      <header>
+        <div class="leftSide">
+          <img src="./img/ic_user_full.svg" alt="userlogo" />
+          <span>Users</span>
+        </div>
+        <div class="rightSide">
+          <input
+            type="text"
+            class="form-control searchBtn"
+            placeholder="Search here ..."
+          />
+          <button type="button" class="btn btn-light saveBtn">
+            Save
+          </button>
+        </div>
+      </header>
+      <table class="table tmain">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Email</th>
+            <th scope="col">Department</th>
+            <th scope="col">Permmission</th>
+            <th scope="col">Username</th>
+            <th scope="col">Join Date</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody class="studentList">
+          <tr>
+            <td>1</td>
+            <td id="email"></td>
+            <td id="department">Otto</td>
+            <td id="permmission">@mdo</td>
+            <td id="username">Otto</td>
+            <td id="joinDate">last</td>
+            <td>
+              <button id="add">
+                <img src="./img/add.svg" alt="add logo" />
+              </button>
+            </td>
+            <td>
+              <button id="del">
+                <img src="./img/delete.svg" alt="delet logo" />
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <script src="./js/app2.js"></script>
+  </body>
+</html>

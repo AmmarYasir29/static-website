@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background: #fafafa 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.rightPage {
+  width: 74%;
+  height: 720px;
+  float: right;
+  background: transparent;
+}
+.picRight {
+  width: 900px;
+  height: 720px;
+  margin: auto;
+  display: block;
+  padding-top: 60px;
+}
+.leftPage {
+  width: 26%;
+  height: 720px;
+  background: #ffffff;
+  float: left;
+  box-shadow: 0px 3px 6px #00000029;
+}
+.top {
+  height: 50%;
+  width: 100%;
+}
+.head {
+  width: max-content;
+  font-size: 30px;
+  margin: 75px 50px;
+  font-family: "Lemon", cursive;
+  text-align: left;
+  background: linear-gradient(to right, #1d3557de, #457b9dde);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pic1 {
+  width: 157px;
+  height: 157px;
+  margin: 0 auto;
+  display: block;
+}
+
+.bottom {
+  width: 100%;
+  height: 50%;
+}
+input[type="email"],
+input[type="password"] {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 100px;
+  border: none;
+  box-shadow: 0px 6px 20px #c7d0f880;
+  margin-bottom: -25px;
+}
+.inputWithIcon i,
+.inputWithIcon img {
+  position: relative;
+  top: 33px;
+  left: 40px;
+  font-size: x-large;
+  color: #457b9dde;
+}
+a,
+button {
+  width: 140px;
+  height: 50px;
+  background: linear-gradient(to right, #457b9dde, #a8dadcde);
+  border-radius: 100px;
+  position: absolute;
+  top: 600px;
+  left: 170px;
+  color: white;
+  border: none;
+  font-size: larger;
+}

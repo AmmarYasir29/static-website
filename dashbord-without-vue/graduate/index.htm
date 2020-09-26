@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mainPage.htm" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-auth.js"></script>
+    <title>Control Panel</title>
+  </head>
+  <body class="main">
+    <section class="rightPage">
+      <img
+        class="picRight"
+        src="./img/control panel illustration.svg"
+        alt="full pic Right Page"
+      />
+    </section>
+    <section class="leftPage">
+      <div class="top">
+        <h1 class="head">Admin </br> Control Panel</h1>
+        <img src="./img/logo.svg" class="pic1" />
+    </div>
+      <div class="bottom">
+          <div class="inputWithIcon">
+            <i class="far fa-envelope fa-lg" aria-hidden="true"></i>
+            <input type="email" placeholder="Email" autocomplete="on" id="emailFild"/>
+          </div>
+      </br>
+          <div class="inputWithIcon">
+            <img src="./img/passwordLogo.svg" alt="logo passowrd" />
+            <input type="password" placeholder="Password" autocomplete="off" id="passwordFild" />
+          </div>
+      <button id="btnSignin"> Sign In <img src="./img/icons-back.svg" alt="singIn"></button>
+    </div>
+    </section>
+    <script src="./js/app.js"></script>
+    <script>
+       firebase.auth().onAuthStateChanged(function (user) {
+        if (user) {
+    // User is signed in.
+    window.location.href = "mainPage.htm";
+  }
+});
+    </script>
+  </body>
+</html>
