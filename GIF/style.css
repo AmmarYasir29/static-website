@@ -1,0 +1,28 @@
+.edit {
+  width: 50%;
+  border-radius: 100px;
+  position: relative;
+  top: 150px;
+  left: 300px;
+}
+.edit:hover {
+  border: 1px sold blue;
+}
+h1 {
+  position: relative;
+  top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: aquamarine;
+}
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+.yellow {
+  color: yellow;
+}
